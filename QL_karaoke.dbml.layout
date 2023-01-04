@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="QL_karaoke">
+  <DataContextMoniker Name="/QL_karaokeDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4099472d-7909-491c-a670-8cf0f3ebb5bd" absoluteBounds="6.75, 3.75, 2, 1.7708968098958326">
+      <DataClassMoniker Name="/QL_karaokeDataContext/account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f383433-43bf-45cc-9a7d-0716769c1cfb" absoluteBounds="6.765, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="db497aa7-aa0c-48d2-b085-222570b89e46" absoluteBounds="3.5, 4.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/QL_karaokeDataContext/bill" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3caf38c5-63c0-4781-9364-5a4dfea6d175" absoluteBounds="3.515, 5.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2aa5027a-9974-4bae-a263-75461aa0686c" absoluteBounds="6.25, 1, 2, 1.5785953776041663">
+      <DataClassMoniker Name="/QL_karaokeDataContext/billInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="153701ae-866f-4955-8d79-2bf411160cc0" absoluteBounds="6.265, 1.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="232823aa-9bc4-49ae-98f5-d482add49d0d" absoluteBounds="0.75, 1.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/QL_karaokeDataContext/foodCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9beb348d-33f3-47bb-90cb-6b5e04a9d817" absoluteBounds="0.765, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="de237ea5-8067-4c48-b33d-1465cde832b8" absoluteBounds="3.5, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/QL_karaokeDataContext/food" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fc604bc3-fe28-4fe3-ae21-7dd9138d9754" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0457dec-4565-4ec1-944a-bd6c27ff0e18" absoluteBounds="0.75, 5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QL_karaokeDataContext/Room" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f3e549b-00ca-4718-8bcf-57115f5453f9" absoluteBounds="0.765, 5.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 6.2444482421875); (6.46875 : 6.2444482421875); (6.46875 : 2.57859537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QL_karaokeDataContext/bill/bill_billInfo" />
+      <nodes>
+        <classShapeMoniker Id="db497aa7-aa0c-48d2-b085-222570b89e46" />
+        <classShapeMoniker Id="2aa5027a-9974-4bae-a263-75461aa0686c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.78929768880208); (6.25 : 1.78929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QL_karaokeDataContext/food/food_billInfo" />
+      <nodes>
+        <classShapeMoniker Id="de237ea5-8067-4c48-b33d-1465cde832b8" />
+        <classShapeMoniker Id="2aa5027a-9974-4bae-a263-75461aa0686c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.81814697265625); (3.5 : 1.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QL_karaokeDataContext/foodCategory/foodCategory_food" />
+      <nodes>
+        <classShapeMoniker Id="232823aa-9bc4-49ae-98f5-d482add49d0d" />
+        <classShapeMoniker Id="de237ea5-8067-4c48-b33d-1465cde832b8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.78929768880208); (3.5 : 5.78929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QL_karaokeDataContext/Room/Room_bill" />
+      <nodes>
+        <classShapeMoniker Id="d0457dec-4565-4ec1-944a-bd6c27ff0e18" />
+        <classShapeMoniker Id="db497aa7-aa0c-48d2-b085-222570b89e46" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
